@@ -90,9 +90,3 @@ npm run preview
 
 ---
 
-##  وابستگی‌ها
-
-- React — کتابخانه رابط کاربری 
-- TypeScript — تایپ‌استاتیک 
-- Vite — ابزار ساخت سریع 
-- CSS Modules — استایل‌های Scoped و ماژولار 
