@@ -10,6 +10,8 @@ function App() {
 
   const [shapes, setShapes] = useState<Shape[]>([]);
 
+  const [title, setTitle] = useState("Painting");
+
   const [selectedPainting, setSelectedPainting] = useState<ShapeType | null>(null)
 
   const addShape = (shape: Shape) => {
@@ -26,7 +28,7 @@ function App() {
 
   return (
     <div className={styles.layout}>
-      <Header shapes={shapes} setShapes={setShapes} />
+      <Header title={title} setTitle={setTitle} shapes={shapes} setShapes={setShapes} />
 
       <div className={styles.contents}>
         <div className={styles.boardAndCounterWrapper}>

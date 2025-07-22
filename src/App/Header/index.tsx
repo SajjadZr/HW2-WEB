@@ -3,13 +3,15 @@ import styles from './styles.module.css';
 import type { Shape } from '../configs';
 
 interface PropTypes {
+    title: string;
+    setTitle: Dispatch<SetStateAction<string>>;
     shapes: Shape[];
     setShapes: Dispatch<SetStateAction<Shape[]>>
 }
 
-const Header = (props: PropTypes) => {
+const Header = ({ title, setTitle, shapes, setShapes }: PropTypes) => {
 
-    const { shapes, setShapes } = props;
+    // const { shapes, setShapes } = props;
 
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -33,7 +35,19 @@ const Header = (props: PropTypes) => {
 
     return (
         <div className={styles.container}>
-            <h1>Painting</h1>
+            <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Enter title"
+            style={{
+                fontSize: "20px",
+                border: "none",
+                outline: "none",
+                background: "transparent",
+                flexGrow: 1
+            }}
+            />
             <button onClick={importJSONClickHandler}>import</button>
             <button onClick={JSONToFile}>export</button>
             <input
