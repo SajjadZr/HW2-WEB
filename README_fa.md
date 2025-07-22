@@ -90,3 +90,11 @@ npm run preview
 
 ---
 
+## وابستگی‌ها
+
+- React — UI library 
+- TypeScript — Static typing 
+- Vite — Fast build tool 
+- CSS Modules — Scoped styling 
+
+
