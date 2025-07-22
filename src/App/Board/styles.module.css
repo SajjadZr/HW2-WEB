@@ -1,0 +1,7 @@
+.container {
+    width: 100%;
+    flex-grow: 1;
+    border: 1px solid #c0c0c0;
+    position: relative;
+    overflow: hidden;
+}
