@@ -1,4 +1,4 @@
-# paint — A Minimalist Interactive Drawing Board
+# Paint — A Minimalist Interactive Drawing Board
 
 A component-based paint app built with React, TypeScript, and Vite. This project showcases a clean UI for drawing basic shapes (circle, square, triangle) on a canvas, featuring modular components, responsive design, and a scalable architecture.
 
@@ -12,7 +12,7 @@ A component-based paint app built with React, TypeScript, and Vite. This project
 -  Shape Counter to track number of shapes on canvas 
 -  Component-based architecture with modular styles 
 -  Fast Dev Server via Vite 
-- 
+
 
 ---
 
